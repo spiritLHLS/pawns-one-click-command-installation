@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 定义容器名
-NAME='tm'
+NAME='iproyalnode'
 
 # 自定义字体彩色，read 函数，安装依赖函数
 red(){ echo -e "\033[31m\033[01m$1$2\033[0m"; }
@@ -55,7 +55,8 @@ check_virt(){
 
 # 输入 traffmonetizer 的个人 token
 input_token(){
-  [ -z $TMTOKEN ] && reading " Enter your token, something end with =, if you do not find it, open https://traffmonetizer.com/?aff=247346: " TMTOKEN
+  [ -z $EMAIL ] && reading " Enter your Email, if you do not find it, open https://iproyal.com/pawns?r=97082: " EMAIL 
+  [ -z $PASSWORD ] && reading " Enter your PASSWORD: " PASSWORD
 }
 
 container_build(){
@@ -77,9 +78,10 @@ container_build(){
   docker ps -a | awk '{print $NF}' | grep -qw "$NAME" && yellow " Remove the old traffmonetizer container.\n " && docker rm -f "$NAME" >/dev/null 2>&1
 
   # 创建容器
-  yellow " Create the traffmonetizer container.\n "
-  docker run -d --name $NAME traffmonetizer/cli:$ARCH start accept --token "$TMTOKEN" >/dev/null 2>&1
-
+  yellow " Create the iproyal container.\n "
+  docker pull iproyal/pawns-cli:latest
+  docker run --name "$NAME" --restart=always iproyal/pawns-cli:latest -email="$EMAIL" -password="$PASSWORD" -device-name=iproyalnode -accept-tos
+  
   # 创建 Towerwatch
   [[ ! $(docker ps -a) =~ watchtower ]] && yellow " Create TowerWatch.\n " && docker run -d --name watchtower --restart always -p 2095:8080 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup >/dev/null 2>&1
 }
@@ -92,16 +94,17 @@ result(){
 # 卸载
 uninstall(){
   docker rm -f $(docker ps -a | grep -w "$NAME" | awk '{print $1}')
-  docker rmi -f $(docker images | grep traffmonetizer/cli | awk '{print $3}')
+  docker rmi -f $(docker images | grep iproyal/pawns-cli | awk '{print $3}')
   green "\n Uninstall containers and images complete.\n"
   exit 0
 }
 
 # 传参
-while getopts "UuT:t:" OPTNAME; do
+while getopts "UuM:m:P:p:" OPTNAME; do
   case "$OPTNAME" in
     'U'|'u' ) uninstall;;
-    'T'|'t' ) TMTOKEN=$OPTARG;;
+    'M'|'m' ) EMAIL=$OPTARG;;
+    'P'|'p' ) PASSWORD=$OPTARG;;
   esac
 done
 
