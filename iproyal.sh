@@ -116,3 +116,4 @@ check_virt
 input_token
 container_build
 result
+rm -rf iproyal.sh*
