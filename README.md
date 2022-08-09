@@ -30,7 +30,7 @@ It has below features:
 ### Interactive installation
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash ./iproyal.sh
+curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash iproyal.sh
 ```
 
 After the registration link is registered, remember the email and password, run this script, paste the email and password, and press Enter to start the installation.
@@ -38,7 +38,7 @@ After the registration link is registered, remember the email and password, run 
 ### One command installation
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash ./iproyal.sh -m youremail -p yourpassword
+curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash iproyal.sh -m youremail -p yourpassword
 ```
 
 Change to your the email and password of this command
