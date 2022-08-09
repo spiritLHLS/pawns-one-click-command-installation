@@ -53,10 +53,10 @@ check_virt(){
   esac
 }
 
-# 输入 traffmonetizer 的个人 token
+# 输入 iproyal 的个人 信息
 input_token(){
   [ -z $EMAIL ] && reading " Enter your Email, if you do not find it, open https://iproyal.com/pawns?r=97082: " EMAIL 
-  [ -z $PASSWORD ] && reading " Enter your PASSWORD: " PASSWORD
+  [ -z $PASSWORD ] && reading " Enter your Password: " PASSWORD
 }
 
 container_build(){
@@ -75,7 +75,7 @@ container_build(){
   fi
 
   # 删除旧容器（如有）
-  docker ps -a | awk '{print $NF}' | grep -qw "$NAME" && yellow " Remove the old traffmonetizer container.\n " && docker rm -f "$NAME" >/dev/null 2>&1
+  docker ps -a | awk '{print $NF}' | grep -qw "$NAME" && yellow " Remove the old iproyal container.\n " && docker rm -f "$NAME" >/dev/null 2>&1
 
   # 创建容器
   yellow " Create the iproyal container.\n "
