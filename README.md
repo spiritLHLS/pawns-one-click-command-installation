@@ -1,4 +1,4 @@
-# traffmonetizer-one-click-command-installation
+# iproyal-one-click-command-installation
 
 ## Language
 
