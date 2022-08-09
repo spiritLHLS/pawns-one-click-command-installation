@@ -6,11 +6,9 @@
 
 ## **Introduction**
 
-The traffmonetizer is an option that allows users to earn money by sharing your traffic.
+The iproyal is an option that allows users to earn money by sharing your traffic.
 
 You'll receive $0.10 for the 1G traffic you share, and this script supports data center network or home bandwidth.
-
-This is the **first one-click installation script of the whole network** to automatically install dependencies and pull and install the latest docker, and the script will continue to be improved according to the platform update.
 
 It has below features:
 
@@ -25,43 +23,37 @@ It has below features:
 ## Notes
 
 - Verified on AMD64 and ARM
-- Try it if you are interested via my --> [referrals](https://traffmonetizer.com/?aff=247346) <--, you will get 5 dollar.
+- Try it if you are interested via my --> [referrals](https://iproyal.com/pawns?r=97082) <--, you will get 1 dollar.
 
 ## Install
 
 ### Interactive installation
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-command-installation/main/tm.sh -o tm.sh && chmod +x tm.sh && bash ./tm.sh
+curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash ./iproyal.sh
 ```
 
-After the registration link is registered, copy the token in the upper left corner, run my script, paste the token, and press Enter to start the installation.
+After the registration link is registered, remember the email and password, run this script, paste the email and password, and press Enter to start the installation.
 
 ### One command installation
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-command-installation/main/tm.sh -o tm.sh && chmod +x tm.sh && bash ./tm.sh -t ViRrn6FZQsfgmE9pjmyAPsEM7UD6epqMb4zcJ3WtQYk=
+curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash ./iproyal.sh -m youremail -p yourpassword
 ```
 
-Change to your token at the end of this command
+Change to your the email and password of this command
 
 ## Uninstall
 
 ```shell
-bash tm.sh -u
+bash iproyal.sh -u
 ```
 
 uninstall service
 
 ## Experience
 
-For a single IP, the daily income in Europe is 0.010~0.015 US dollars. It is estimated that there will be more in the United States. The daily income of a single IP is more than 0.013 and not more than 0.016.
-
-**More monks and less porridge, the more people, the lower the income**
-
-![](https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-command-installation/main/backup/a.png)
-
-![](https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-command-installation/main/backup/b.png)
+The platform does not allow data center traffic, so it can only be shared using home bandwidth or similar.
 
 ## Disclaimer
 
