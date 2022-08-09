@@ -26,7 +26,7 @@ iproyal 是一个允许用户通过分享流量来赚钱的平台。(被动收�
 ### 交互式安装
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash ./iproyal.sh
+curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash iproyal.sh
 ```
 
 注册链接注册后，记住邮箱和密码，运行这个脚本，粘贴邮箱和密码，回车开始安装。
@@ -34,7 +34,7 @@ curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-i
 ### 一键安装
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash ./iproyal.sh -m 你的邮箱 -p 你的密码
+curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash iproyal.sh -m 你的邮箱 -p 你的密码
 ```
 
 在此命令的中更改为你的账号邮箱和密码即可
