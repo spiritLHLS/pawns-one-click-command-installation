@@ -26,14 +26,15 @@ iproyal 是一个允许用户通过分享流量来赚钱的平台。(被动收�
 ### 交互式安装
 
 ```shell
+curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash ./iproyal.sh
 ```
 
-注册链接注册后，
+注册链接注册后，记住邮箱和密码，运行这个脚本，粘贴邮箱和密码，回车开始安装。
 
 ### 一键安装
 
 ```shell
-
+curl -L https://raw.githubusercontent.com/spiritLHLS/iproyal-one-click-command-installation/main/iproyal.sh -o iproyal.sh && chmod +x iproyal.sh && bash ./iproyal.sh -m 你的邮箱 -p 你的密码
 ```
 
 在此命令的中更改为你的账号邮箱和密码即可
@@ -41,14 +42,14 @@ iproyal 是一个允许用户通过分享流量来赚钱的平台。(被动收�
 ## 卸载
 
 ```shell
-
+bash iproyal.sh -u
 ```
 
 卸载服务
 
 ### 经验
 
-只能挂家庭带宽，也就是说服务器是挂不了的。
+该平台不允许数据中心流量，因此只能使用家庭带宽或类似带宽共享，也就是说服务器是挂不了的。
 
 ### 免责声明
 
