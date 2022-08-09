@@ -1,4 +1,4 @@
-# traffmonetizer-一键式命令安装
+# iproyal-一键式命令安装
 
 ## 介绍
 
