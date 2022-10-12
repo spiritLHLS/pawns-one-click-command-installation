@@ -8,7 +8,7 @@
 
 The iproyal is an option that allows users to earn money by sharing your traffic.
 
-You'll receive $0.10 for the 1G traffic you share, and this script supports data center network or home bandwidth.
+You'll receive $0.20 for the 1G traffic you share, and this script supports data center network or home bandwidth.
 
 It has below features:
 
