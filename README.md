@@ -1,4 +1,5 @@
 # iproyal-one-click-command-installation
+# pawns-one-click-command-installation
 
 ## Language
 
