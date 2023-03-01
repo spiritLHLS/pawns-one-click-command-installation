@@ -1,5 +1,5 @@
 #!/bin/bash
-#FROM https://github.com/spiritLHLS/iproyal-one-click-command-installation
+#FROM https://github.com/spiritLHLS/pawns-one-click-command-installation
 
 # 定义容器名
 NAME='iproyalnode'
@@ -56,7 +56,7 @@ check_virt(){
 
 # 输入 iproyal 的个人 信息
 input_token(){
-  [ -z $EMAIL ] && reading " Enter your Email, if you do not find it, open https://iproyal.com/pawns?r=97082: " EMAIL 
+  [ -z $EMAIL ] && reading " Enter your Email, if you do not find it, open https://pawns.app?r=usdbonus: " EMAIL 
   [ -z $PASSWORD ] && reading " Enter your Password: " PASSWORD
 }
 
