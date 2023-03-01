@@ -24,7 +24,7 @@ It has below features:
 ## Notes
 
 - Verified on AMD64 and ARM
-- Try it if you are interested via my --> [referrals](https://iproyal.com/pawns?r=97082) <--, you will get 1 dollar.
+- Try it if you are interested via my --> [referrals](https://pawns.app?r=usdbonus) <--, you will get 1 dollar.
 
 ## Install
 
