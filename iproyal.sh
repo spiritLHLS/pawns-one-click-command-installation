@@ -83,7 +83,8 @@ container_build(){
   ori=$(date | md5sum)
   rname=${ori: 2: 9}
   docker pull iproyal/pawns-cli:latest
-  docker run -d --name "$NAME" --restart=always iproyal/pawns-cli:latest -email="$EMAIL" -password="$PASSWORD" -device-name=raspberrypi -device-id="$rname" -accept-tos >/dev/null 2>&1
+#   docker run -d --name "$NAME" --restart=always iproyal/pawns-cli:latest -email="$EMAIL" -password="$PASSWORD" -device-name=raspberrypi -device-id="$rname" -accept-tos >/dev/null 2>&1
+  docker run -d --name "$NAME" --restart=always iproyal/pawns-cli:latest -email="$EMAIL" -password="$PASSWORD" -device-name=raspberrypi -accept-tos >/dev/null 2>&1
   
   # 创建 Towerwatch
   [[ ! $(docker ps -a) =~ watchtower ]] && yellow " Create TowerWatch.\n " && docker run -d --name watchtower --restart always -p 2095:8080 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup >/dev/null 2>&1
